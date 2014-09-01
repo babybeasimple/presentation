@@ -5,6 +5,10 @@ var presentationSlidePath = paths.presentationSlidePath;
 var Show = Backbone.View.extend({
     template: require('../../templates/presentations/show.handlebars'),
 
+    /**
+    * @arg options.presentation [Presentations.Model]
+    * @arg options.collection [Slides.Collection]
+    */
     initialize: function (options) {
         this.presentation = options.presentation;
         this.collection = this.presentation.get('slides');

@@ -4,6 +4,9 @@ var presentationTemplate = require('../../templates/presentations/presentation.h
 var Index = Backbone.View.extend({
     tagName: 'ul',
 
+    /**
+    * @arg options.collection [Presentations.Collection]
+    */
     initialize: function (options) {
         this.collection = options.collection;
     },
