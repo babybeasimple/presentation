@@ -1,0 +1,28 @@
+a {
+  color: #428bca;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2a6496;
+  text-decoration: underline;
+}
+
+.l-main .l-presentation-index {
+  padding-top: 50px;
+  text-align: center;
+  list-style-type: none;
+}
+
+.l-main .l-presentation-show .l-viewport {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.l-main .l-presentation-show .l-viewport .b-slide > img {
+  cursor: pointer;
+}
+
+.l-main .l-presentation-show .l-viewport .b-slide > img.last {
+  cursor: default;
+}

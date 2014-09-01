@@ -1,12 +1,18 @@
-{{#if isNotFirst}}
-    <a href="{{previousSlidePath}}">Previous slide</a>
-{{/if}}
-
-{{#if isNotLast}}
-    <a href="{{nextSlidePath}}">Next slide</a>
-{{/if}}
-<br/>
-
-<img src='{{url}}'>
-<br/>
-<a href='{{presentationsPath}}'>Presentations</a>
+<div class='l-viewport'>
+  <div class='b-slide'>
+    {{#if isNotLast}}
+      <img src='{{url}}'/>
+    {{else}}
+      <img src='{{url}}' class='last'/>
+    {{/if}}
+  </div>
+  <div class='b-controls'>
+    {{#if isNotFirst}}
+      <a href="{{previousSlidePath}}">Previous slide</a> |
+    {{/if}}
+    {{#if isNotLast}}
+      <a href="{{nextSlidePath}}">Next slide</a> |
+    {{/if}}
+    <a href='{{presentationsPath}}'>Presentations list</a>
+  </div
+</div

@@ -4,6 +4,7 @@ var presentationSlidePath = paths.presentationSlidePath;
 
 var Show = Backbone.View.extend({
     template: require('../../templates/presentations/show.handlebars'),
+    className: 'l-presentation-show',
 
     /**
     * @arg options.presentation [Presentations.Model]

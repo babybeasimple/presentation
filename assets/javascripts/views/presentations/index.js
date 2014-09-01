@@ -3,6 +3,7 @@ var presentationTemplate = require('../../templates/presentations/presentation.h
 
 var Index = Backbone.View.extend({
     tagName: 'ul',
+    className: 'l-presentation-index',
 
     /**
     * @arg options.collection [Presentations.Collection]
