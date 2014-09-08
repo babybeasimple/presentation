@@ -1,2 +1,2 @@
 install:
-	npm install && gulp scripts
+	npm install && ./node_modules/.bin/gulp scripts
